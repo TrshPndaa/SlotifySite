@@ -1,0 +1,101 @@
+# Changelog
+
+## Current Version [0.1.0] - 2024-01-20
+
+### Implemented Features
+- Initial project setup with Next.js and TypeScript
+- Homepage with animated info popups and pink circular accents
+- Registration page with form validation and business type selection
+- Dashboard page functionality:
+  - Business information management
+  - Service management (add/delete services)
+  - Payment information settings
+- Basic styling using Tailwind CSS
+- Client-side form validation
+- Responsive design for all pages
+
+### Current Technical Implementation
+- Next.js 13+ with App Router
+- TypeScript interfaces for type safety
+- React hooks (useState) for state management
+- Client-side form validation
+- Responsive UI components
+- Basic page routing
+
+### Current Issues to Address
+- Form submissions not connected to backend yet
+- Missing authentication system
+- Payment processing not implemented
+- Service scheduling functionality pending
+
+### Planned Components
+1. Calendar Component
+   - Reusable calendar with time slot selection
+   - Support for blocked out dates/times
+   - Multiple view options (day, week, month)
+   - Customizable time intervals
+   - Ability to handle timezone differences
+
+2. Booking Slot Component 
+   - Display available time slots for services
+   - Handle duration-based bookings
+   - Show booking status (available, booked, pending)
+   - Support for buffer times between bookings
+
+3. Service Card Component
+   - Standardized display of service information
+   - Price, duration, description formatting
+   - Action buttons (book, edit, delete)
+   - Support for service images
+
+4. Business Hours Component
+   - Weekly schedule management
+   - Special holiday hours
+   - Break time settings
+   - Multiple staff schedule support
+
+5. Customer Form Component
+   - Reusable booking form
+   - Contact information collection
+   - Service selection
+   - Special requests/notes field
+
+6. Notification Component
+   - Booking confirmations
+   - Reminder alerts
+   - Status updates
+   - Customizable templates
+
+7. Payment Processing Component
+   - Secure payment form
+   - Multiple payment method support
+   - Receipt generation
+   - Refund handling
+
+## Planned Version [0.2.0] - Backend Integration
+
+### Backend Features to Implement
+1. Flask Backend Setup
+   - SQLite3 database integration
+   - Database schema design for:
+     * Users/Businesses
+     * Services
+     * Bookings
+     * Business Hours
+     * Customer Information
+   - RESTful API endpoints for:
+     * Authentication
+     * Service management
+     * Booking operations
+     * Business profile management
+
+### Planned Technical Implementation
+- Flask-SQLAlchemy for database ORM
+- Flask-Cors for handling cross-origin requests
+- JWT authentication implementation
+- Database migrations using Flask-Migrate
+- API documentation with Swagger/OpenAPI
+
+### Frontend Updates Required
+- Integration of API calls with Flask backend
+- Development environment proxy configuration
